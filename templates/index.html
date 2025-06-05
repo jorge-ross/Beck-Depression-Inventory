@@ -1,35 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Beck Depression Inventory</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 20px; }
-        h1 { color: #003366; }
-        form { background: white; padding: 20px; border-radius: 8px; max-width: 700px; margin: auto; }
-        .question { margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; font-weight: bold; }
-        select { width: 100%; padding: 6px; font-size: 1rem; }
-        button { background: #003366; color: white; border: none; padding: 12px 25px; font-size: 1rem; cursor: pointer; border-radius: 5px; }
-        button:hover { background: #0055a5; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Beck Depression Inventory</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #003366;
+      text-align: center;
+      margin: 2rem 0;
+      padding: 0;
+      ;
+    }
+
+    form {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .question {
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+      border-radius: 1.5rem;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .question h3 {
+      margin-top: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    button {
+      background: #003366;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      display: block;
+      margin: 30px auto 0;
+    }
+
+    button:hover {
+      background: #0055a5;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 28px;
+      margin-top: 40px;
+      border-top: 2px solid #333;
+    }
+
+    .footer-logo {
+      height: 28px;
+      vertical-align: middle;
+      margin: 0;
+      width: auto;
+      margin-left: 4px;
+    }
+
+    footer p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      text-align: left;
+      padding: 0.1rem 1rem;
+      font-size: 1.625rem;
+      border-bottom: 1px solid #333;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 8px;
+    }
+
+    .brand-name {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .header-logo {
+      height: 36px;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Inventario de Depresión de Beck</h1>
-    <form method="post" action="/result">
-        {% for item in questions %}
-  <div class="question">
-    <label for="question{{ loop.index0 }}">{{ item.text }}</label>
-    <select name="question{{ loop.index0 }}" id="question{{ loop.index0 }}" required>
-      <option value="" disabled selected>Select an option</option>
-      {% for option in item.options %}
+  <header>
+    <div class="header-content">
+      <h3>Recursos – <span class="brand-name">Neuro-dev</span></h3>
+      <img src="/static/logond.png" alt="Logo" class="header-logo">
+    </div>
+  </header>
+  <h1>Inventario de Depresión de Beck</h1>
+  <form method="POST" action="/result">
+    {% for item in questions %}
+    <div class="question">
+      <h3>{{ item.text }}</h3>
+      <ul>
+        {% set question_index = loop.index0 %}
+        {% for option in item.options %}
         {% set value = option.split(" - ")[0] %}
-        <option value="{{ value }}">{{ option }}</option>
-      {% endfor %}
-    </select>
-  </div>
-{% endfor %}
-        <button type="submit">Submit</button>
-    </form>
+        <li>
+          <label>
+            <input type="radio" name="question{{ question_index }}" value="{{ value }}" required>
+            {{ option }}
+          </label>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+    <button type="submit">Enviar</button>
+  </form>
+  <footer>
+    <p>Desarrollado por <strong>Neuro-dev</strong> <img src="/static/logond.png" alt="Logo" class="footer-logo">
+      <br />2025
+    </p>
+  </footer>
 </body>
+
 </html>
