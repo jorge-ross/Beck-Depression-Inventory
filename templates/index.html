@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beck Depression Inventory</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 20px; }
+        h1 { color: #003366; }
+        form { background: white; padding: 20px; border-radius: 8px; max-width: 700px; margin: auto; }
+        .question { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        select { width: 100%; padding: 6px; font-size: 1rem; }
+        button { background: #003366; color: white; border: none; padding: 12px 25px; font-size: 1rem; cursor: pointer; border-radius: 5px; }
+        button:hover { background: #0055a5; }
+    </style>
+</head>
+<body>
+    <h1>Inventario de Depresión de Beck</h1>
+    <form method="post" action="/result">
+        {% for item in questions %}
+  <div class="question">
+    <label for="question{{ loop.index0 }}">{{ item.text }}</label>
+    <select name="question{{ loop.index0 }}" id="question{{ loop.index0 }}" required>
+      <option value="" disabled selected>Select an option</option>
+      {% for option in item.options %}
+        {% set value = option.split(" - ")[0] %}
+        <option value="{{ value }}">{{ option }}</option>
+      {% endfor %}
+    </select>
+  </div>
+{% endfor %}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

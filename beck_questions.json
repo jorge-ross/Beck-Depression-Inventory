@@ -1,0 +1,191 @@
+[
+  [
+    "1. Tristeza",
+    [
+      "0 - No me siento triste",
+      "1 - Me siento triste",
+      "2 - Me siento triste continuamente y no puedo dejar de estarlo",
+      "3 - Estoy tan triste o soy tan infeliz que no puedo soportarlo"
+    ]
+  ],
+  [
+    "2. Pesimismo",
+    [
+      "0 - No estoy desalentado respecto del mi futuro",
+      "1 - Me siento más desalentado respecto de mi futuro que lo que solía estarlo",
+      "2 - No espero que las cosas funcionen para mí",
+      "3 - Siento que no hay esperanza para mi futuro y sólo puede empeorar"
+    ]
+  ],
+  [
+    "3. Sentimientos de fracaso",
+    [
+      "0 - No me siento como un fracasado",
+      "1 - He fracasado más de lo que hubiera debido",
+      "2 - Cuando miro hacia atrás, veo muchos fracasos",
+      "3 - Me siento como una persona totalmente fracasada"
+    ]
+  ],
+  [
+    "4. Pérdida de placer",
+    [
+      "0 - Disfruto de las cosas tanto como antes",
+      "1 - No disfruto de las cosas tanto como solía hacerlo",
+      "2 - Obtengo muy poco placer de las cosas que solía disfrutar",
+      "3 - No puedo obtener ningún placer de las cosas"
+    ]
+  ],
+  [
+    "5. Sentimientos de culpa",
+    [
+      "0 - No me siento particularmente culpable",
+      "1 - Me siento culpable respecto de varias cosas que he hecho o que debería haber hecho",
+      "2 - Me siento bastante culpable la mayor parte del tiempo",
+      "3 - Me siento culpable todo el tiempo"
+    ]
+  ],
+  [
+    "6. Sentimientos de castigo",
+    [
+      "0 - No siento que esté siendo castigado",
+      "1 - Siento que tal vez pueda ser castigado",
+      "2 - Espero ser castigado",
+      "3 - Siento que estoy siendo castigado"
+    ]
+  ],
+  [
+    "7. Disconformidad con uno mismo",
+    [
+      "0 - Me siento acerca de mí lo mismo que siempre",
+      "1 - He perdido la confianza en mí mismo",
+      "2 - Estoy decepcionado conmigo mismo",
+      "3 - No me gusto a mí mismo"
+    ]
+  ],
+  [
+    "8. Autocrítica",
+    [
+      "0 - No me critico ni me culpo más de lo habitual",
+      "1 - Estoy más crítico conmigo mismo de lo que solía estarlo",
+      "2 - Me critico por todos mis errores",
+      "3 - Me culpo a mí mismo por todo lo malo que sucede"
+    ]
+  ],
+  [
+    "9. Pensamientos o deseos suicidas",
+    [
+      "0 - No tengo ningún pensamiento de matarme",
+      "1 - He tenido pensamientos de matarme, pero no lo haría",
+      "2 - Querría matarme",
+      "3 - Me mataría si tuviera la oportunidad de hacerlo"
+    ]
+  ],
+  [
+    "10. Llanto",
+    [
+      "0 - No lloro más de lo que solía hacerlo",
+      "1 - Lloro más de lo que solía hacerlo",
+      "2 - Lloro por cualquier pequeñez",
+      "3 - Siento ganas de llorar pero no puedo"
+    ]
+  ],
+  [
+    "11. Agitación",
+    [
+      "0 - No estoy más inquieto o tenso que lo habitual",
+      "1 - Me siento más inquieto o tenso que lo habitual",
+      "2 - Estoy tan inquieto o agitado que me resulta difícil quedarme quieto",
+      "3 - Estoy tan inquieto o agitado que tengo que estar siempre en movimiento o haciendo algo"
+    ]
+  ],
+  [
+    "12. Pérdida de interés",
+    [
+      "0 - No he perdido el interés en otras personas o actividades",
+      "1 - Estoy menos interesado que antes en otras personas o cosas",
+      "2 - He perdido casi todo el interés en otras personas o cosas",
+      "3 - Me resulta difícil interesarme por algo"
+    ]
+  ],
+  [
+    "13. Indecisión",
+    [
+      "0 - Tomo decisiones tan bien como siempre",
+      "1 - Me resulta más difícil que de costumbre tomar decisiones",
+      "2 - Encuentro mucha dificultad para tomar decisiones",
+      "3 - No puedo tomar decisiones"
+    ]
+  ],
+  [
+    "14. Desvalorización",
+    [
+      "0 - No siento que yo no sea valioso",
+      "1 - No me considero tan valioso y útil como solía considerarme",
+      "2 - Me siento menos valioso cuando me comparo con otros",
+      "3 - Siento que no valgo nada"
+    ]
+  ],
+  [
+    "15. Pérdida de energía",
+    [
+      "0 - Tengo tanta energía como siempre",
+      "1 - Tengo menos energía que la que solía tener",
+      "2 - No tengo suficiente energía para hacer demasiado",
+      "3 - No tengo energía suficiente para hacer nada"
+    ]
+  ],
+  [
+    "16. Cambios en los hábitos de sueño",
+    [
+      "0 - Duermo tan bien como siempre",
+      "1 - Duermo un poco más o un poco menos que lo habitual",
+      "2 - Duermo mucho más o mucho menos que lo habitual",
+      "3 - Duermo la mayor parte del día o me despierto muchas veces durante la noche y no puedo volver a dormir"
+    ]
+  ],
+  [
+    "17. Irritabilidad",
+    [
+      "0 - No estoy más irritable que lo usual",
+      "1 - Estoy más irritable que lo usual",
+      "2 - Estoy mucho más irritable que lo usual",
+      "3 - Estoy irritable todo el tiempo"
+    ]
+  ],
+  [
+    "18. Cambios en el apetito",
+    [
+      "0 - Mi apetito no ha cambiado",
+      "1 - Mi apetito es un poco menor o mayor que antes",
+      "2 - Mi apetito es mucho menor o mayor que antes",
+      "3 - No tengo apetito o quiero comer todo el día"
+    ]
+  ],
+  [
+    "19. Dificultad de concentración",
+    [
+      "0 - Puedo concentrarme tan bien como siempre",
+      "1 - No puedo concentrarme tan bien como habitualmente",
+      "2 - Me resulta difícil mantener la mente en algo por mucho tiempo",
+      "3 - Encuentro que no puedo concentrarme en nada"
+    ]
+  ],
+  [
+    "20. Cansancio o fatiga",
+    [
+      "0 - No estoy más cansado o fatigado que lo habitual",
+      "1 - Me fatigo más fácilmente que lo habitual",
+      "2 - Estoy demasiado fatigado para hacer muchas de las cosas que solía hacer",
+      "3 - Estoy demasiado fatigado para hacer la mayoría de las cosas que solía hacer"
+    ]
+  ],
+  [
+    "21. Pérdida de interés en el sexo",
+    [
+      "0 - No he notado ningún cambio reciente en mi interés por el sexo",
+      "1 - Estoy menos interesado en el sexo que antes",
+      "2 - Estoy mucho menos interesado en el sexo",
+      "3 - He perdido completamente el interés en el sexo"
+    ]
+  ]
+]

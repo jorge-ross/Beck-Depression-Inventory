@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+        .container { background: white; padding: 20px; max-width: 600px; margin: auto; border-radius: 8px; }
+        h2 { color: #003366; }
+        ul { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Your score: {{ total }}</h2>
+        <p><strong>Interpretation:</strong> {{ interpretation }}</p>
+        <p><strong>Recommendations:</strong></p>
+        <ul>
+            {% for suggestion in suggestions %}
+            <li>{{ suggestion }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>
