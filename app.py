@@ -26,22 +26,34 @@ def results(score):
     if score <= 9:
         return "Depresión mínima o sin depresión", [
             "Mantén un estilo de vida saludable.",
-            "Busca apoyo si notas cambios en tu estado de ánimo."
+            "Busca apoyo si notas cambios en tu estado de ánimo.",
+            "Duerme al menos 7-8 horas por noche.",
+            "Aliméntate balanceadamente y realiza actividad física.",
+            "Practica técnicas de relajación como la respiración profunda o mindfulness."
         ]
     elif score <= 18:
         return "Depresión leve", [
+            "Practica actividades que disfrutes.",
             "Considera hablar con un profesional de la salud mental.",
-            "Practica actividades que disfrutes."
+            "Establece rutinas diarias que te generen bienestar.",
+            "Comparte tus emociones con alguien de confianza.",
+            "Evita el aislamiento: mantente conectado con personas cercanas."
         ]
     elif score <= 29:
         return "Depresión moderada", [
             "Es recomendable buscar ayuda psicológica o psiquiátrica.",
-            "No dudes en compartir tus sentimientos con personas de confianza."
+            "No dudes en compartir tus sentimientos con personas de confianza.",
+            "Establece metas pequeñas y alcanzables día a día.",
+            "Monitorea tus pensamientos negativos y cuestiona su validez.",
+            "Evita automedicarte y busca orientación profesional."
         ]
     else:
         return "Depresión grave", [
             "Busca atención profesional inmediata.",
-            "No estás solo, hay ayuda disponible."
+            "No estás solo, hay ayuda disponible.",
+            "Contacta a un psicólogo o psiquiatra de forma urgente.",
+            "Habla con alguien de confianza sobre cómo te sientes.",
+            "Si tienes pensamientos de autolesión o suicidio, busca ayuda de emergencia inmediatamente."
         ]
 
 
